@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Give IT Back - Zarządzaj pożyczkami</title>
+    <meta name="description" content="Śledź, pożyczaj, oddawaj. Twoje osobiste centrum zarządzania pożyczkami." />
+    <meta name="theme-color" content="#064e3b" />
+    
+    <!-- PWA Manifest Placeholder -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="https://picsum.photos/192/192" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#022c22', // emerald-950
+                main: '#047857', // emerald-700
+                light: '#34d399', // emerald-400
+                accent: '#10b981', // emerald-500
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth scrolling */
+      html { scroll-behavior: smooth; }
+      /* Hide scrollbar for clean UI but allow functionality */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "firebase/": "https://esm.sh/firebase@^12.6.0/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom": "https://esm.sh/react-dom@^19.2.1",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.1/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
