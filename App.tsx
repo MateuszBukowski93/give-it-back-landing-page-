@@ -39,7 +39,7 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col font-sans selection:bg-emerald-500 selection:text-white">
       <Header isDark={isDark} toggleTheme={toggleTheme} />
       
-      <main className="flex-grow">
+      <main className="grow">
         <Hero />
         <Features />
         <Benefits />

@@ -2,14 +2,19 @@ import React from 'react';
 import { Container } from './ui/Container';
 
 const Hero: React.FC = () => {
+
+  function handleButton(){
+    const download = document.getElementById('download');
+    window.scrollTo({top: download?.offsetTop, behavior: 'smooth'});
+  }
   return (
     <section className="pt-24 pb-8">
       <Container>
         {/* Main Card */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-[#1a412e] to-[#05110a] shadow-2xl shadow-emerald-900/20 border border-white/10">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-emerald-50 to-white dark:from-[#1a412e] dark:to-[#05110a] shadow-2xl shadow-emerald-900/10 dark:shadow-emerald-900/20 border border-emerald-100 dark:border-white/10">
             
             {/* Background Texture/Noise (Optional for aesthetics) */}
-            <div className="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+            <div className="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] dark:opacity-20 opacity-0"></div>
 
             <div className="flex flex-col items-center text-center p-6 sm:p-10 relative z-10">
                 
@@ -23,19 +28,19 @@ const Hero: React.FC = () => {
                         style={{ maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)' }}
                     />
                      {/* Overlay gradient to blend image into card */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#102d20] to-transparent pointer-events-none"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-emerald-50 dark:from-[#102d20] to-transparent pointer-events-none"></div>
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
                     Zarządzaj pożyczonymi <br className="hidden sm:block"/> rzeczami bez problemów
                 </h1>
                 
-                <p className="text-gray-300 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
                     Zapomnij o zagubionych przedmiotach. Twoje osobiste centrum zarządzania pożyczkami.
                 </p>
 
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                    <button className="px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-black font-bold rounded-full transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                    <button onClick={handleButton} className="px-8 py-3 bg-emerald-600 dark:bg-emerald-500 hover:bg-emerald-500 dark:hover:bg-emerald-400 text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
                         Zacznij teraz
                     </button>
                 </div>

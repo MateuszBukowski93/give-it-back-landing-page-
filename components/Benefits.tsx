@@ -4,7 +4,7 @@ import { Icons } from './ui/Icon';
 
 const BenefitItem: React.FC<{ text: string }> = ({ text }) => (
   <div className="flex items-center gap-3">
-    <div className="flex-shrink-0 text-emerald-500">
+    <div className="shrink-0 text-emerald-500">
       <Icons.Check className="fill-emerald-500 text-white dark:text-black" size={24} />
     </div>
     <span className="text-sm font-medium text-gray-700 dark:text-gray-300 leading-tight">
