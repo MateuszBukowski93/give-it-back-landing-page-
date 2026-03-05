@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Benefits from './components/Benefits';
-import Premium from './components/Premium';
-import DownloadButtons from './components/DownloadButtons';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 import './services/firebase'; // Init firebase
 
-const App: React.FC = () => {
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+const AppContent: React.FC = () => {
   // Default to dark mode as per design
   const [isDark, setIsDark] = useState(true);
 
@@ -40,15 +49,24 @@ const App: React.FC = () => {
       <Header isDark={isDark} toggleTheme={toggleTheme} />
       
       <main className="flex-grow">
-        <Hero />
-        <Features />
-        <Benefits />
-        <Premium />
-        <DownloadButtons />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+        </Routes>
       </main>
 
       <Footer />
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <ScrollToTop />
+      <AppContent />
+    </Router>
   );
 };
 

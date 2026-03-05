@@ -6,9 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1PKf4UWdt3C4Cs2J71VBW7AxFqAwQcmfx
-
-View your app in  https://give-it-back-landing-page.vercel.app/
+View your app in AI Studio: https://ai.studio/apps/aae73a76-ea2c-4710-910e-9408ec68a587
 
 ## Run Locally
 
