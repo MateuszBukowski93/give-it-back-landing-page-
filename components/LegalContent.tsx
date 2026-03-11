@@ -30,8 +30,7 @@ export const PrivacyPolicyContent = () => (
       <li>Świadczenia usług drogą elektroniczną w zakresie udostępniania treści gromadzonych w Aplikacji.</li>
       <li>Umożliwienia rejestracji i logowania do konta Użytkownika.</li>
       <li>Wysyłania powiadomień Push przypominających o terminach zwrotu przedmiotów.</li>
-      <li>Wyświetlania reklam (w wersji darmowej Aplikacji) za pośrednictwem usługi Google AdMob.</li>
-      <li>Obsługi płatności w przypadku wykupienia konta Premium.</li>
+      <li>Wyświetlania reklam za pośrednictwem usługi Google AdMob.</li>
       <li><strong>Analizy i optymalizacji:</strong> Monitorowanie zachowań Użytkowników w celu wykrywania błędów, ulepszania funkcjonalności, dostosowywania interfejsu oraz personalizacji treści reklamowych (profilowanie).</li>
     </ul>
 
@@ -105,11 +104,10 @@ export const TermsOfServiceContent = () => (
       Użytkownik wyraża zgodę na monitorowanie jego aktywności w Aplikacji (w tym kliknięć, nawigacji) w celach analitycznych i ulepszania jakości usług.
     </p>
 
-    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-2">5. Wersja Premium i Reklamy</h3>
+    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-2">5. Reklamy</h3>
     <ul className="list-disc pl-5 space-y-1">
-      <li>Wersja darmowa Aplikacji wyświetla reklamy dostarczane przez sieć Google AdMob.</li>
-      <li>Użytkownik ma możliwość wykupienia konta Premium, które usuwa reklamy oraz znosi limit liczby dodawanych przedmiotów.</li>
-      <li>Opłata za konto Premium jest bezzwrotna, chyba że obowiązujące przepisy prawa stanowią inaczej.</li>
+      <li>Aplikacja wyświetla reklamy dostarczane przez sieć Google AdMob.</li>
+      <li>Korzystając z Aplikacji, Użytkownik wyraża zgodę na wyświetlanie materiałów reklamowych.</li>
     </ul>
 
     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-2">6. Wyłączenie Odpowiedzialności</h3>

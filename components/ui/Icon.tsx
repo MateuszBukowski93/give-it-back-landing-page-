@@ -8,7 +8,9 @@ import {
   Moon,
   Sun,
   Menu,
-  X
+  X,
+  Users,
+  Bell
 } from 'lucide-react';
 
 export const Icons = {
@@ -20,5 +22,7 @@ export const Icons = {
   Moon: Moon,
   Sun: Sun,
   Menu: Menu,
-  Close: X
+  Close: X,
+  Users: Users,
+  Bell: Bell
 };

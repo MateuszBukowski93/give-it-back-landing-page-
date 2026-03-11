@@ -27,16 +27,16 @@ const Hero: React.FC = () => {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
-                    Zarządzaj pożyczonymi <br className="hidden sm:block"/> rzeczami bez problemów
+                    Koniec z zapominaniem, <br className="hidden sm:block"/> kto ma Twoje rzeczy
                 </h1>
                 
-                <p className="text-gray-300 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-                    Zapomnij o zagubionych przedmiotach. Twoje osobiste centrum zarządzania pożyczkami.
+                <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+                    Give IT Back to inteligentna aplikacja, która pamięta za Ciebie. Dodawaj przedmioty, łącz je z kontaktami w telefonie i automatycznie otrzymuj powiadomienia, gdy minie termin zwrotu.
                 </p>
 
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                     <button className="px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-black font-bold rounded-full transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-                        Zacznij teraz
+                        Pobierz aplikację
                     </button>
                 </div>
             </div>
